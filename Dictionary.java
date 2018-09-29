@@ -6,7 +6,7 @@ public class Dictionary {
 
     }
 
-    private ArrayList<Word> listWord = new ArrayList<Word>();
+    public static ArrayList<Word> listWord = new ArrayList<Word>();
 
     public void addWord(Word word) {
         this.listWord.add(word);

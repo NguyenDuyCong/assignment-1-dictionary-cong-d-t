@@ -8,16 +8,18 @@ public class DictionaryManagement {
 
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        sc.nextLine();
 
         for (int i = 0; i < n; i++){
-            System.out.println("Input english word: ");
+            System.out.print("Input english word: ");
             String english = sc.nextLine();
 
-            System.out.println("Input vietnamese meaning: ");
+            System.out.print("Input vietnamese meaning: ");
             String vietnamese = sc.nextLine();
-
+            System.out.println();
             Word word = new Word(english, vietnamese);
             myDic.addWord(word);
         }
+        sc.close();
     }
 }
