@@ -64,5 +64,6 @@ public class DictionaryCommandline {
                 }
 
         }
+        DictionaryManagement.dictionaryExportToFile();
     }
 }
