@@ -61,6 +61,23 @@ public class DictionaryManagement {
         }
         return ans;
     }
+    public static void dictionaryExportToFile()
+    {   PrintWriter writer = null;
+        try {
+            writer = new PrintWriter("src\\com\\company\\fileWrite.txt");
+        } catch (IOException e)
+        {
+            e.printStackTrace();
+        }
+        writer.println("No | English | Vietnamese");
+        int no = 0;
+        for (Word word: Dictionary.myDic)
+        {
+            no = no + 1;
+            writer.println(no +"  | "+word.getWord_target()+ " | "+ word.getWord_explain());
+        }
+        writer.close();
+    }
 
     public static void deleteWord (String english_word)
     {

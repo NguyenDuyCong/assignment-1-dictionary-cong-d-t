@@ -1,4 +1,0 @@
-No | English | Vietnamese
-1  | dog | cho
-2  | hungry | doi
-3  | king | vua
